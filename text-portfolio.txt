@@ -37,3 +37,18 @@ And then high-power LEDs display the different states of the system (ignition de
 In addition the whole system is waterproof (can stay in the water at 60 meters depth for 2 weeks) and can run up to 72 hours nonstop.
 
 During testing process both cameras have taken snapshots at a speed of 60 frame/second, but the management system has no limitated speed.
+
+
+Freescale Cup
+
+The Freescale Cup is a global competition where student teams build, program, and race a model car around a track for speed. 
+The fastest car to complete the track without derailing, wins.
+
+I take part of this race with another teammate in the Haute Ecole ARC race team in 2015, we finished second of the France-Switzerland final and 8<sup>th</sup> of the EMEA final.
+We are also ranked 64<sup>th</sup> worldwide (out of a total of 35.000 students parcipating).
+
+The track is composed of different known circuit parts. Each part have different forms but all have a white background and one black line of both borders.
+With this two black lines and the embedded car's camera we can determine through digital processing the location of the lines. 
+Then we can ajust the comportment of the car, regulate the direction of the car and the speed of each rear wheels.
+
+The biggest challenge is to adopt the more aggressive drive comportment dealing with the physical constraint of the little weight of the car.
