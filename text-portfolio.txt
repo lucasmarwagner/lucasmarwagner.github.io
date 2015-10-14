@@ -1,0 +1,39 @@
+Georges' arm
+
+Georges' arm is an application coupled with embedded system that allow to control a robot arm with your android smartphone.
+This arm is handmade and is controled by an PIC system generating PWM for the servos.
+The application count three tabs : 
+x Bluetooth 
+The communication between the smartphone and the arm use bluetooth.
+In this tab we can couple/connect/configure/disconnect the Bluetooth connections between the two systems. 
+x Calibration
+The arm can be guided by a couple of the embedded Smartphone's sensors, therefore it must be calibrated before use.
+In this tab we can calibrate the 3 axis accelerometer and the compass for a better user experience.
+x Control
+The arm can be guided in two differents ways, by cursors display of the screen of the smartphone or using the embedded smartphone's sensors. 
+In this tab the arm will reproduce all the movements of the smartphone and apply all the values of differents cursors.
+
+And all of that in a fancy design !
+
+
+Missiles snapshots
+
+This embedded system allow to take an high amount of pictures of a missile ignition.
+
+The goal of the system is to detect the exact moment of a missile ignition and then command up to two cameras to take pictures of this launch.
+
+The missile can be from different types:
+Anti-tank missile (or any missile fire from a earthbound tripod)
+Sea-Sea/Ground/Air missile (fire from a aircraft carrier)
+
+The detection of the missile's ignition can be made by :
+Detection of flames
+Detection of sound (detonation of the ignition)
+Detection of the openning from the gas extraction trap by differents sort of sensors.
+
+Inside the box we can configure a delay before snapshots will be taken, the duration of the snapshots and an alarm to keep awake the cameras.
+And then high-power LEDs display the different states of the system (ignition detection, battery level, camera 1/2 state).
+
+In addition the whole system is waterproof (can stay in the water at 60 meters depth for 2 weeks) and can run up to 72 hours nonstop.
+
+During testing process both cameras have taken snapshots at a speed of 60 frame/second, but the management system has no limitated speed.
