@@ -497,7 +497,7 @@
 						
 						<div class="row">
 
-							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".8s">
+							<div class="col-sm-4 wow bounceInLeft" data-wow-delay=".8s">
 								<div class="service">
 									<div class="icon">
 										<i class="fa fa-eye"></i>
@@ -521,7 +521,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 wow bounceInUp" data-wow-delay="1.2s">
+							<div class="col-sm-4 wow bounceInRight" data-wow-delay="1.2s">
 								<div class="service">
 									<div class="icon">
 										<i class="fa fa-cogs"></i>
@@ -672,14 +672,14 @@
 							<p align="center">Georges' arm is an application coupled with embedded system that allow to control a robot arm with your android smartphone.
 								<br>This arm is handmade and is controled by an PIC system generating PWM for the servos.</p>
 							<p>The application count three tabs : </p>
-							<h6>Bluetooth </h6>
-							<p align="center">	The communication between the smartphone and the arm use bluetooth.
+							<p><b>Bluetooth</b></p>
+							<p>	The communication between the smartphone and the arm use bluetooth.
 								<br>In this tab we can couple/connect/configure/disconnect the Bluetooth connections between the two systems.</br><p/>
-							<h6> Calibration</h6>
-							<p align="center">	The arm can be guided by a couple of the embedded Smartphone's sensors, therefore it must be calibrated before use.
+							<p><b>Calibration</b></p>
+							<p>	The arm can be guided by a couple of the embedded Smartphone's sensors, therefore it must be calibrated before use.
 								<br>In this tab we can calibrate the 3 axis accelerometer and the compass for a better user experience.</br></p>
-							<h6> Control </h6>
-							<p align="center">	The arm can be guided in two differents ways, by cursors display of the screen of the smartphone or using the embedded smartphone's sensors. 
+							<p><b> Control </b></p>
+							<p>	The arm can be guided in two differents ways, by cursors display of the screen of the smartphone or using the embedded smartphone's sensors. 
 								<br>In this tab the arm will reproduce all the movements of the smartphone and apply all the values of differents cursors.</br></p>
 
 							<p><br>And all of that in a fancy design !</br></p>
@@ -722,25 +722,25 @@
 							<h4 class="modal-title">Missiles snapshots</h4>
 						  </div>
 						  <div class="modal-body">
-							<p align="center">This embedded system allow to take an high amount of pictures of a missile ignition.</p>
+							<p>This embedded system allow to take an high amount of pictures of a missile ignition.</p>
 
-							<p align="center">The goal of the system is to detect the exact moment of a missile ignition and then command up to two cameras to take pictures of this launch.</p>
+							<p>The goal of the system is to detect the exact moment of a missile ignition and then command up to two cameras to take pictures of this launch.</p>
 
-							<h6>The missile can be from different types:</h6>
+							<p><b>The missile can be from different types:</b></p>
 							<p align="center">Anti-tank missile (or any missile fire from a earthbound tripod)
 							<br>Sea-Sea/Ground/Air missile (fire from a aircraft carrier)</br></p>
 
-							<h6>The detection of the missile's ignition can be made by :</h6>
-							<p align="center">Detection of flames
-							<br>Detection of sound (detonation of the ignition)
-							<br>Detection of the openning from the gas extraction trap by differents sort of sensors.</br></p>
+							<p><b>The detection of the missile's ignition can be made by the detection of:</b></p>
+							<p align="center">Flames
+							<br>Sound (detonation of the ignition)
+							<br>Openning from the gas extraction trap</br></p>
 
-							<p align="center">Inside the box we can configure a delay before snapshots will be taken, the duration of the snapshots and an alarm to keep awake the cameras.
+							<p>Inside the box we can configure a delay before snapshots will be taken, the duration of the snapshots and an alarm to keep awake the cameras.
 							<br>And then high-power LEDs display the different states of the system (ignition detection, battery level, camera 1/2 state).<p>
 
-							<p align="center">In addition the whole system is waterproof (can stay in the water at 60 meters depth for 2 weeks) and can run up to 72 hours nonstop.</p> 
+							<p>In addition the whole system is waterproof (can stay in the water at 60 meters depth for 2 weeks) and can run up to 72 hours nonstop.</p> 
 
-							<p align="center">During testing process both cameras have taken snapshots at a <b>speed of 60 frame/second</b>, but the management system has no limitated speed.</p>
+							<p>During testing process both cameras have taken snapshots at a <b>speed of 60 frame/second</b>, but the management system has no limitated speed.</p>
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -772,10 +772,29 @@
 						<div class="modal-content">
 						  <div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
+							<h4 class="modal-title">Acoustic localisation</h4>
 						  </div>
 						  <div class="modal-body">
-							<p>Some text in the modal 3.</p>
+							<p>This system was design and develop in the context of my <b>swiss Bachelor degree thesis</b>.</p>
+
+							<p>My thesis is focused of the monitoring of animals for the purpose of their protection and preservation.</p>
+
+							<p><b>This monitoring is based on the acoustic localisation and follow this process :</b></p>
+							<p align="center">We place three modules at known location
+							<br>Each module comports a USB key (256 GB)and a microphone
+							<br>Each module record the sound coming from their microphones
+							<br>Convert it in digital signal
+							<br>Save this raw digital signal of their USB keys
+							<br>After three months and 6 hours of daily recording we retieve the three USB keys
+							<br>On a computer we perform signal processing using correlation to extract animal noises
+							<br>Then with a final process we have the localisation and movement of the animal during the three months</p>
+
+							<p><br>The problem with this process is that the modules must be exactly time-synchronised, otherwise the localisation will be distorted. 
+							<br>To achieve a very accurate time-synchronisation we use a <b>GPS receiver</b> and take the GPS clock.</p>
+							<p>With this solution we can theoretically locate the animal with an error from less that <b>one meter in a range of a couple of kilometers.</b></p> 
+							  
+							<p>This board is design for a very low-power application with high performance.
+							The design of the board is selfmade, choosing the best hardware possibilities and the most performants electronical parts.</p>
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -807,10 +826,33 @@
 						<div class="modal-content">
 						  <div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
+							<h4 class="modal-title">Freescale Cup</h4>
 							
 						  <div class="modal-body">
-							<p>Some text in the modal 5.</p>
+							<p>The Freescale Cup is a global competition where student teams build, program, and race a model car around a track for speed. 
+								The fastest car to complete the track without derailing, wins.</p>
+
+							<p>The track is composed of different known circuit parts. Each part have different forms but all have a white background and one black line of both borders.
+							<br>With this two black lines and the embedded car's camera we can determine through digital processing the location of the lines. 
+							<br>Then we can ajust the comportment of the car, regulate the direction of the car and the speed of each rear wheels.</p>
+
+							<p><b>A couple of domains are implicated in the Freescale Cup :</b></p>
+							<p align="center">Regulation
+							<br align="center">Physics
+							<br align="center">Mathematical
+							<br align="center">	Programming (C language)
+							<br align="center">	Microcontroler programming (Cortex M4, registers, ports, ...)
+							<br align="center">	Monitoring (Wi-Fi communication and LabVIEW)
+							<br align="center">	Electronic
+							<br align="center">	Software design 
+							<br align="center">	...
+									
+									
+							<p>	The biggest challenge is to adopt the more aggressive drive comportment dealing with the physical constraint of this little weight car.</p>
+
+							<p>I take part of this race with another teammate in the Haute Ecole ARC race team in 2015.</p>
+							<p><br>We finished <b>2<sup>nd</sup> of the France-Switzerland </b> final and <b>8<sup>th</sup> of the EMEA</b> final.
+							<br>We are also ranked <b>64<sup>th</sup> worldwide</b> (out of a total of 35.000 students parcipating).</p>
 						  </div>
 						  
 						  </div>
@@ -846,7 +888,23 @@
 							<h4 class="modal-title">Modal Header</h4>
 						  </div>
 						  <div class="modal-body">
-							<p>Some text in the modal 2.</p>
+							<p>This system was design and develop in the context of my <b>german Bachelor degree thesis</b>.</p>
+
+							<p>My thesis is focused of the securisation of a communication channel in the field of IoT.</p>
+
+							<p>The goal is to secure an unsecured communication channel between sensors,gateways,brokers and computers (field of home and building automation).</p>
+
+							<p><b>The first part of the thesis was to establish a communication between all the partners.</b></p>
+							<p>Depending of the "partner" technology, they are using different :</p>
+							<p align="center">Communication medium (Ethernet, Wi-Fi, 6LoWPAN, ...)
+							<br>Different internet protocols(UDP/TCP, IPV4/IPV6)</p>
+							
+
+							<p><b>The second part was the securisation of that freshly established communication.</b>
+							<br>We are therefore going to use cryptography principles (key exchange, certificates, ...) and security protocols (DTLS, TLS, ...).</p>
+
+							<p>The final solution combine different communication mediums, security protocols, cryptography principles and internet protocols.
+							<br>We can now send data between sensors/actuators and a management center (laptops, tablets, phones, smartwatchs, ...) using a secured channel. </p>
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -862,7 +920,7 @@
 				<div class="row">
 
 					<div class="col-md-6 col-md-offset-5 wow bounceInUp">
-						<a href="CV_LucasWagner.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download Book</a>
+						<a href="Book_LucasWagner.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download Book</a>
 					</div>
 
 				</div><!-- .row -->

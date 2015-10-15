@@ -44,11 +44,67 @@ Freescale Cup
 The Freescale Cup is a global competition where student teams build, program, and race a model car around a track for speed. 
 The fastest car to complete the track without derailing, wins.
 
-I take part of this race with another teammate in the Haute Ecole ARC race team in 2015, we finished second of the France-Switzerland final and 8<sup>th</sup> of the EMEA final.
-We are also ranked 64<sup>th</sup> worldwide (out of a total of 35.000 students parcipating).
-
 The track is composed of different known circuit parts. Each part have different forms but all have a white background and one black line of both borders.
 With this two black lines and the embedded car's camera we can determine through digital processing the location of the lines. 
 Then we can ajust the comportment of the car, regulate the direction of the car and the speed of each rear wheels.
 
-The biggest challenge is to adopt the more aggressive drive comportment dealing with the physical constraint of the little weight of the car.
+A couple of domains are implicated in the Freescale Cup :
+	Regulation
+	Physics
+	Mathematical
+	Programming (C language)
+	Microcontroler programming (Cortex M4, registers, ports, ...)
+	Monitoring (Wi-Fi communication and LabVIEW)
+	Electronic
+	Software design 
+	...
+	
+	
+The biggest challenge is to adopt the more aggressive drive comportment dealing with the physical constraint of this little weight car.
+
+I take part of this race with another teammate in the Haute Ecole ARC race team in 2015, we finished second of the France-Switzerland final and 8<sup>th</sup> of the EMEA final.
+We are also ranked 64<sup>th</sup> worldwide (out of a total of 35.000 students parcipating).
+
+
+
+Acoustic localisation
+
+This system was design and develop in the context of my swiss Bachelor degree thesis.
+
+My thesis is focused of the monitoring of animals for the purpose of their protection and preservation.
+
+This monitoring is based on the acoustic localisation and follow this process : 
+We place three modules at known location
+Each module comports a USB key (256 GB)and a microphone
+Each module record the sound coming from their microphones
+Convert it in digital signal
+Save this raw digital signal of their USB keys
+After three months and 6 hours of daily recording we retieve the three USB keys
+On a computer we perform signal processing using correlation to extract animal noises
+Then with a final process we have the localisation and movement of the animal during the three months
+
+The problem with this process is that the modules must be exactly time-synchronised, otherwise the localisation will be distorted. 
+To achieve a very accurate time-synchronisation we use a GPS receiver and take the GPS clock.
+With this solution we can theoretically locate the animal with an error from less that one meter in a range of a couple of kilometers. 
+  
+This board is design for a very low-power application with high performance.
+The design of the board is selfmade, choosing the best hardware possibilities and the most performants electronical parts.
+
+
+
+IoT
+
+This system was design and develop in the context of my german Bachelor degree thesis.
+
+My thesis is focused of the securisation of a communication channel in the field of IoT.
+
+The goal is to secure an unsecured communication channel between sensors,gateways,brokers and computers (field of home and building automation).
+
+The first part of the thesis was to establish a communication between all the partners, all using different communication medium (Ethernet, Wi-Fi, 6LoWPAN, ...)
+ and different internet protocols(UDP/TCP, IPV4/IPV6).
+
+The second part was the securisation of that freshly established communication.
+We are therefore going to use cryptography principles (key exchange, certificates, ...) and security protocols (DTLS, TLS, ...).
+
+The final solution combine different communication mediums, security protocols, cryptography principles and internet protocols.
+We can now send data between sensors/actuators and a management center (laptops, tablets, phones, smartwatchs, ...) using a secured channel. 
